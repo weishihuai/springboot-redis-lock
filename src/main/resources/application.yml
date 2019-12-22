@@ -1,0 +1,15 @@
+server:
+  port: 1111
+spring:
+  application:
+    name: springboot-redis-lock
+  redis:
+    host: 192.168.8.130
+    database: 0
+    lettuce:
+      pool:
+        max-active: 8
+        max-idle: 8
+        min-idle: 0
+        max-wait: -1
+    timeout: 3200ms
